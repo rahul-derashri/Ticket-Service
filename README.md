@@ -9,8 +9,7 @@
 ####Steps to Test Project####
   * Go to the path till "src"
   * Execute command "javac -cp .;"./../lib/junit-4.12.jar" com/test/TestTicketService.java" to compile.
-  * Execute command "java -cp .;"./../lib/junit-4.12.jar";"./../lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore  
-    com.test.TestTicketService" to run test cases.
+  * Execute command "java -cp .;"./../lib/junit-4.12.jar";"./../lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore com.test.TestTicketService" to run test cases.
 
 ####Assumptions and Comments about Best Seats Algorithm####
   * At most 10 seats can be booked together as usually it is a dropdown on GUI.
