@@ -17,7 +17,7 @@ import com.ticketservice.SeatHold;
 public class SeatsDB {
 	
 	// Seat hold timeout
-	public static final int TIME_OUT = 60*1000;
+	public static final int TIME_OUT = 20*1000;
 	
 	private static int seatsRemainingAtL1;
 	private static int seatsRemainingAtL2;
