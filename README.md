@@ -13,7 +13,7 @@
     com.test.TestTicketService" to run test cases.
 
 ####Assumptions and Comments about Best Seats Algorithm####
-  * At most 10 seats can be booked together.
+  * At most 10 seats can be booked together as usually it is a dropdown on GUI.
   * Seats are assigned sequentially starting with min Venue level and lowest row possible.
   * Seats are considered best if all seats are in one row.
   * If contiguous seats are not available i.e. if the systems not able to find the best seats then it assignes random seats at the 
