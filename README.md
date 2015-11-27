@@ -20,6 +20,7 @@
     lowest level possible as long as the required number of seats are available.
   * As Database is not used for this implementation, SeatsDB is treated as DB.
   * Not used EmailId to check uniqueness as moslty ConfirmationCode and holdSeatId is used to identify the related object details.
+  * Test cases covers business logic part rather than blank field validation or some other issues like that.
 
 ####NOTE 
 TIMEOUT for Ticket hold expiration is set in the SeatsDB file. While testing you can change it to 20 Seconds to make it run fast  but set it to 60 seconds if you are running it manually to see the proper functioning.
