@@ -23,6 +23,7 @@ public class SeatsDB {
 	private static int seatsRemainingAtL2;
 	private static int seatsRemainingAtL3;
 	private static int seatsRemainingAtL4;
+	private static int id;
 	
 	// Map to hold non-confirmed SeatHold objects 
 	private static Map<Integer, SeatHold> bookingHold;
@@ -47,6 +48,8 @@ public class SeatsDB {
 		seatsRemainingAtL2 = VenueLevel.MAIN.getRows() * VenueLevel.MAIN.getRowSeats();
 		seatsRemainingAtL3 = VenueLevel.BALCONY1.getRows() * VenueLevel.BALCONY1.getRowSeats();
 		seatsRemainingAtL4 = VenueLevel.BALCONY2.getRows() * VenueLevel.BALCONY2.getRowSeats();
+		
+		id = 0;
 		
 		bookingHold = new HashMap<Integer, SeatHold>();
 		holdingQueue = new PriorityBlockingQueue<SeatHold>(50, new SeatHoldComparator());
@@ -144,7 +147,8 @@ public class SeatsDB {
 	}
 	
 	public static int generateSeatHoldId(){
-		return bookingDetails.size()+1;
+		id++;
+		return id;
 	}
 	
 	public static boolean containsKey(Map<Integer, SeatHold> map, int key){
